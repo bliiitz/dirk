@@ -1,16 +1,3 @@
-# Configuration
-Dirk can be configured through environment, command-line or configuration file.  In the case of conflicting configuration the order of precedence is:
-
-  - command-line; then
-  - environment; then
-  - configuration file.
-
-# The configuration file
-Dirk's configuration file can be written in JSON or YAML.  The file can either be in the user's home directory, in which case it will be called `.dirk.json` (or `.dirk.yml`), or it can be in a directory specified by the command line option `--base-dir` or environment variable `DIRK_BASE_DIR`, in which case it will be called `dirk.json` (or `dirk.yml`).
-
-A sample configuration file in YAML with all current options is shown below:
-
-```
 # log-file is the location for Dirk log output.  If this is not provided logs will be written to the console.
 log-file: /home/me/dirk.log
 # log-level is the global log level for Dirk logging.
@@ -23,9 +10,9 @@ server:
   # listen-address is the interface and port on which Dirk will listen for requests; change `127.0.0.1`
   # to `0.0.0.0` to listen on all network interfaces.
   listen-address: 127.0.0.1:13141
-  rules:
+  # rules:
     # admin-ips is a list of IP addresses from which requests for voluntary exists will be accepted.
-    admin-ips: [ 1.2.3.4, 5.6.7.8 ]
+    # admin-ips: [ 1.2.3.4, 5.6.7.8 ]
 certificates:
   # server-cert is the majordomo URL to the server's certificate.
   server-cert: file:///home/me/dirk/security/certificates/myserver.example.com.crt
@@ -40,8 +27,8 @@ storage-path: /home/me/dirk/protection
 # stores is a list of locations and types of Ethereum 2 stores.  If no stores are supplied Dirk will use the
 # default filesystem store.
 stores:
-- name: VaultK8S
-  type: vault
+- name: Local
+  type: filesystem
   location: /home/me/dirk/wallets
 metrics:
   # listen-address is where Dirk's Prometheus server will present.  If this value is not present then Dirk
@@ -75,39 +62,3 @@ permissions:
   # This permission allows client3 the ability to carry out all operations on accounts in wallet2.
   client3:
     wallet2: All
-```
-
-## Logging
-Dirk has a modular logging system that allows different modules to log at different levels.  The available log levels are:
-
-  - **Fatal**: messages that result in Dirk stopping immediately;
-  - **Error**: messages due to Dirk being unable to fulfil a valid process;
-  - **Warning**: messages that result in Dirk not completing a process due to transient or user issues;
-  - **Information**: messages that are part of Dirk's normal startup and shutdown process;
-  - **Debug**: messages when one of Dirk's processes diverge from normal operations;
-  - **Trace**: messages that detail the flow of Dirk's normal operations; or
-  - **None**: no messages are written.
-
-### Global level
-The global level is used for all modules that do not have an explicit log level.  This can be configured using the command line option `--log-level`, the environment variable `DIRK_LOG_LEVEL` or the configuration option `log-level`.
-
-### Module levels
-Modules levels are used for each module, overriding the global log level.  The available modules are:
-
-  - **accountmanager** operations on accounts such as locking and unlocking existing accounts, and generating new accounts
-  - **api** operations from the external API
-  - **checker** checks client access to operations
-  - **fetcher** fetches wallets and accounts from Ethereum 2 stores
-  - **lister** lists accounts that match a given path specification
-  - **locker** locks accounts across Dirk, ensuring only a single operation can take place at a time on any given account
-  - **majordomo** fetches secrets from local and remote stores
-  - **metrics** provides metrics to monitor performance and operation of modules
-  - **peers** provides lists of peers for distributed key generation
-  - **process** carries out the distributed key generation process
-  - **ruler** checks requests against slashing protection rules
-  - **sender** sends data to other Dirk instances during distributed key generation
-  - **signer** signs data using keys held by Dirk
-  - **unlocker** unlocks locked accounts using supplied passphrases
-  - **walletmanager** operations on accounts such as locking and unlocking existing wallets
-
-This can be configured using the environment variables `DIRK_<MODULE>_LOG_LEVEL` or the configuration option `<module>.log-level`.  For example, the peers module logging could be configured using the environment variable `DIRK_PEERS_LOG_LEVEL` or the configuration option `peers.log-level`.  Log levels are hierarchical, allowing for fine-grained control of logging.

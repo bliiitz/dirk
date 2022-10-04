@@ -17,7 +17,7 @@ import (
 	context "context"
 	"testing"
 
-	"github.com/attestantio/dirk/services/api/grpc/interceptors"
+	"github.com/bliiitz/dirk/services/api/grpc/interceptors"
 	"github.com/stretchr/testify/require"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"
 )

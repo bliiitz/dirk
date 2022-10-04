@@ -19,12 +19,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/attestantio/dirk/rules"
-	standardrules "github.com/attestantio/dirk/rules/standard"
-	"github.com/attestantio/dirk/services/checker"
-	syncmaplocker "github.com/attestantio/dirk/services/locker/syncmap"
-	"github.com/attestantio/dirk/services/ruler"
-	"github.com/attestantio/dirk/testing/logger"
+	"github.com/bliiitz/dirk/rules"
+	standardrules "github.com/bliiitz/dirk/rules/standard"
+	"github.com/bliiitz/dirk/services/checker"
+	syncmaplocker "github.com/bliiitz/dirk/services/locker/syncmap"
+	"github.com/bliiitz/dirk/services/ruler"
+	"github.com/bliiitz/dirk/testing/logger"
 	"github.com/stretchr/testify/require"
 )
 

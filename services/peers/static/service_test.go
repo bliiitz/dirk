@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	staticpeers "github.com/attestantio/dirk/services/peers/static"
+	staticpeers "github.com/bliiitz/dirk/services/peers/static"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	e2types "github.com/wealdtech/go-eth2-types/v2"

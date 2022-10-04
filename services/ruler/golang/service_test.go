@@ -17,10 +17,10 @@ import (
 	"context"
 	"testing"
 
-	mockrules "github.com/attestantio/dirk/rules/mock"
-	"github.com/attestantio/dirk/services/locker/syncmap"
-	"github.com/attestantio/dirk/services/metrics/prometheus"
-	"github.com/attestantio/dirk/services/ruler/golang"
+	mockrules "github.com/bliiitz/dirk/rules/mock"
+	"github.com/bliiitz/dirk/services/locker/syncmap"
+	"github.com/bliiitz/dirk/services/metrics/prometheus"
+	"github.com/bliiitz/dirk/services/ruler/golang"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
 )

@@ -17,9 +17,9 @@ import (
 	context "context"
 	"testing"
 
-	handler "github.com/attestantio/dirk/services/api/grpc/handlers/lister"
-	"github.com/attestantio/dirk/services/lister"
-	mocklister "github.com/attestantio/dirk/services/lister/mock"
+	handler "github.com/bliiitz/dirk/services/api/grpc/handlers/lister"
+	"github.com/bliiitz/dirk/services/lister"
+	mocklister "github.com/bliiitz/dirk/services/lister/mock"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

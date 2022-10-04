@@ -17,8 +17,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/attestantio/dirk/services/unlocker/local"
-	"github.com/attestantio/dirk/testing/mock"
+	"github.com/bliiitz/dirk/services/unlocker/local"
+	"github.com/bliiitz/dirk/testing/mock"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -18,9 +18,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/attestantio/dirk/services/locker/syncmap"
-	"github.com/attestantio/dirk/services/metrics"
-	"github.com/attestantio/dirk/services/metrics/prometheus"
+	"github.com/bliiitz/dirk/services/locker/syncmap"
+	"github.com/bliiitz/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics/prometheus"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -19,9 +19,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/attestantio/dirk/services/fetcher/mem"
-	"github.com/attestantio/dirk/services/metrics"
-	"github.com/attestantio/dirk/services/metrics/prometheus"
+	"github.com/bliiitz/dirk/services/fetcher/mem"
+	"github.com/bliiitz/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics/prometheus"
 	"github.com/google/uuid"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
