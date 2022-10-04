@@ -20,8 +20,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/services/api/grpc/handlers"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/services/api/grpc/handlers"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"
 	e2wtypes "github.com/wealdtech/go-eth2-wallet-types/v2"
 )

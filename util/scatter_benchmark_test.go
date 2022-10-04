@@ -19,7 +19,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/attestantio/dirk/util"
+	"github.com/bliiitz/dirk/util"
 	"github.com/stretchr/testify/require"
 )
 

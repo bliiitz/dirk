@@ -14,7 +14,7 @@
 package syncmap
 
 import (
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/rs/zerolog"
 )
 

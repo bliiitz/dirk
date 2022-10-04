@@ -16,7 +16,7 @@ package lister
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/lister"
+	"github.com/bliiitz/dirk/services/lister"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

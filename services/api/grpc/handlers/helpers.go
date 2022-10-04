@@ -16,8 +16,8 @@ package handlers
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/api/grpc/interceptors"
-	"github.com/attestantio/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/api/grpc/interceptors"
+	"github.com/bliiitz/dirk/services/checker"
 )
 
 // GenerateCredentials generates checker credentials from the GRPC request information.

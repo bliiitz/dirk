@@ -16,8 +16,8 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/services/checker"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/services/checker"
 	e2wtypes "github.com/wealdtech/go-eth2-wallet-types/v2"
 )
 

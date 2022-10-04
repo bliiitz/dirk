@@ -16,7 +16,7 @@ package receiver
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/api/grpc/interceptors"
+	"github.com/bliiitz/dirk/services/api/grpc/interceptors"
 )
 
 func (h *Handler) senderID(ctx context.Context) uint64 {

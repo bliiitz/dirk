@@ -16,8 +16,8 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/services/checker"
-	static "github.com/attestantio/dirk/services/checker/static"
+	"github.com/bliiitz/dirk/services/checker"
+	static "github.com/bliiitz/dirk/services/checker/static"
 )
 
 // New creates a new mock checker that will deny clients called 'Deny this client' and any accounts starting with 'Deny'.

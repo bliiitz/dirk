@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

@@ -19,8 +19,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

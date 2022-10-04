@@ -17,7 +17,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

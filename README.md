@@ -1,10 +1,10 @@
 # Dirk
 
-[![Tag](https://img.shields.io/github/tag/attestantio/dirk.svg)](https://github.com/attestantio/dirk/releases/)
+[![Tag](https://img.shields.io/github/tag/attestantio/dirk.svg)](https://github.com/bliiitz/dirk/releases/)
 [![License](https://img.shields.io/github/license/attestantio/dirk.svg)](LICENSE)
-[![GoDoc](https://godoc.org/github.com/attestantio/dirk?status.svg)](https://godoc.org/github.com/attestantio/dirk)
-![Lint](https://github.com/attestantio/dirk/workflows/golangci-lint/badge.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/attestantio/dirk)](https://goreportcard.com/report/github.com/attestantio/dirk)
+[![GoDoc](https://godoc.org/github.com/bliiitz/dirk?status.svg)](https://godoc.org/github.com/bliiitz/dirk)
+![Lint](https://github.com/bliiitz/dirk/workflows/golangci-lint/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bliiitz/dirk)](https://goreportcard.com/report/github.com/bliiitz/dirk)
 
 An Ethereum 2 distributed remote keymanager, focused on security and long-term performance of signing operations.
 
@@ -23,7 +23,7 @@ An Ethereum 2 distributed remote keymanager, focused on security and long-term p
 
 ### Binaries
 
-Binaries for the latest version of `dirk` can be obtained from [the releases page](https://github.com/attestantio/dirk/releases/latest).
+Binaries for the latest version of `dirk` can be obtained from [the releases page](https://github.com/bliiitz/dirk/releases/latest).
 
 ### Docker
 
@@ -38,7 +38,7 @@ docker pull attestant/dirk
 `dirk` is a standard Go module which can be installed with:
 
 ```sh
-go get github.com/attestantio/dirk
+go get github.com/bliiitz/dirk
 ```
 
 ## Usage
@@ -64,7 +64,7 @@ Jim McDonald: [@mcdee](https://github.com/mcdee).
 
 ## Contribute
 
-Contributions welcome. Please check out [the issues](https://github.com/attestantio/dirk/issues).
+Contributions welcome. Please check out [the issues](https://github.com/bliiitz/dirk/issues).
 
 ## License
 

@@ -17,7 +17,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 	"github.com/herumi/bls-eth-go-binary/bls"
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"

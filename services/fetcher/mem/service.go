@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"

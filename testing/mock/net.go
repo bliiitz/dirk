@@ -13,7 +13,7 @@
 
 package mock
 
-import "github.com/attestantio/dirk/services/process"
+import "github.com/bliiitz/dirk/services/process"
 
 // Processes is a map of local process services.
 var Processes map[uint64]process.Service

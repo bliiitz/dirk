@@ -16,8 +16,8 @@ package receiver
 import (
 	"context"
 
-	"github.com/attestantio/dirk/services/peers"
-	"github.com/attestantio/dirk/services/process"
+	"github.com/bliiitz/dirk/services/peers"
+	"github.com/bliiitz/dirk/services/process"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

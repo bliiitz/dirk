@@ -16,7 +16,7 @@ package util_test
 import (
 	"testing"
 
-	"github.com/attestantio/dirk/util"
+	"github.com/bliiitz/dirk/util"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"
 	"github.com/spf13/viper"

@@ -16,7 +16,7 @@ package main
 import (
 	"os"
 
-	"github.com/attestantio/dirk/util"
+	"github.com/bliiitz/dirk/util"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

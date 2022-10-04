@@ -16,7 +16,7 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 )
 
 // OnUnlockWallet is called when a request to unlock a wallet needs to be approved.

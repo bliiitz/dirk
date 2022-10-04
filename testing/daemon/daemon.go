@@ -23,23 +23,23 @@ import (
 	"strings"
 	"time"
 
-	standardrules "github.com/attestantio/dirk/rules/standard"
-	standardaccountmanager "github.com/attestantio/dirk/services/accountmanager/standard"
-	grpcapi "github.com/attestantio/dirk/services/api/grpc"
-	"github.com/attestantio/dirk/services/checker"
-	staticchecker "github.com/attestantio/dirk/services/checker/static"
-	memfetcher "github.com/attestantio/dirk/services/fetcher/mem"
-	standardlister "github.com/attestantio/dirk/services/lister/standard"
-	syncmaplocker "github.com/attestantio/dirk/services/locker/syncmap"
-	staticpeers "github.com/attestantio/dirk/services/peers/static"
-	standardprocess "github.com/attestantio/dirk/services/process/standard"
-	goruler "github.com/attestantio/dirk/services/ruler/golang"
-	sendergrpc "github.com/attestantio/dirk/services/sender/grpc"
-	standardsigner "github.com/attestantio/dirk/services/signer/standard"
-	localunlocker "github.com/attestantio/dirk/services/unlocker/local"
-	standardwalletmanager "github.com/attestantio/dirk/services/walletmanager/standard"
-	"github.com/attestantio/dirk/testing/logger"
-	"github.com/attestantio/dirk/testing/resources"
+	standardrules "github.com/bliiitz/dirk/rules/standard"
+	standardaccountmanager "github.com/bliiitz/dirk/services/accountmanager/standard"
+	grpcapi "github.com/bliiitz/dirk/services/api/grpc"
+	"github.com/bliiitz/dirk/services/checker"
+	staticchecker "github.com/bliiitz/dirk/services/checker/static"
+	memfetcher "github.com/bliiitz/dirk/services/fetcher/mem"
+	standardlister "github.com/bliiitz/dirk/services/lister/standard"
+	syncmaplocker "github.com/bliiitz/dirk/services/locker/syncmap"
+	staticpeers "github.com/bliiitz/dirk/services/peers/static"
+	standardprocess "github.com/bliiitz/dirk/services/process/standard"
+	goruler "github.com/bliiitz/dirk/services/ruler/golang"
+	sendergrpc "github.com/bliiitz/dirk/services/sender/grpc"
+	standardsigner "github.com/bliiitz/dirk/services/signer/standard"
+	localunlocker "github.com/bliiitz/dirk/services/unlocker/local"
+	standardwalletmanager "github.com/bliiitz/dirk/services/walletmanager/standard"
+	"github.com/bliiitz/dirk/testing/logger"
+	"github.com/bliiitz/dirk/testing/resources"
 	"github.com/pkg/errors"
 	e2types "github.com/wealdtech/go-eth2-types/v2"
 	distributed "github.com/wealdtech/go-eth2-wallet-distributed"
@@ -105,12 +105,12 @@ var Wallet2Keys = [][]byte{
 // Cancelling the context will kill the daemon.
 //
 // The specifics of what are created are:
-//  - ND wallet 'Wallet 1' with 16 interop keys indices 0 through 15
-//  - ND wallet 'Wallet 2' with 16 interop keys indices 16 through 31
-//  - distributed wallet 'Wallet 3' with no keys
-//  - full permissions for 'client-test01' to access 'Wallet 1' and 'Wallet 3'
-//  - full permissions for 'client-test02' to access 'Wallet 2' and 'Wallet 3'
-//  - full permissions for 'client-test03' to access 'Wallet 1' and 'Wallet 2'
+//   - ND wallet 'Wallet 1' with 16 interop keys indices 0 through 15
+//   - ND wallet 'Wallet 2' with 16 interop keys indices 16 through 31
+//   - distributed wallet 'Wallet 3' with no keys
+//   - full permissions for 'client-test01' to access 'Wallet 1' and 'Wallet 3'
+//   - full permissions for 'client-test02' to access 'Wallet 2' and 'Wallet 3'
+//   - full permissions for 'client-test03' to access 'Wallet 1' and 'Wallet 2'
 //
 // Returns the log capture for the daemon, along with the filesystem path for the wallets.
 func New(ctx context.Context, path string, id uint64, port uint32, peersMap map[uint64]string) (*logger.LogCapture, string, error) {

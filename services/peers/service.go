@@ -14,7 +14,7 @@
 package peers
 
 import (
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 )
 
 // Service provides peer information.

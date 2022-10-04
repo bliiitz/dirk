@@ -16,7 +16,7 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 )
 
 // OnUnlockAccount is called when a request to unlock an account needs to be approved.

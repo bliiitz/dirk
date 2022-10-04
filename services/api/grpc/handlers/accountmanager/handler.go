@@ -16,8 +16,8 @@ package accountmanager
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/accountmanager"
-	"github.com/attestantio/dirk/services/process"
+	"github.com/bliiitz/dirk/services/accountmanager"
+	"github.com/bliiitz/dirk/services/process"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

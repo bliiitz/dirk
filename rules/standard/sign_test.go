@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/attestantio/dirk/rules"
-	standardrules "github.com/attestantio/dirk/rules/standard"
+	"github.com/bliiitz/dirk/rules"
+	standardrules "github.com/bliiitz/dirk/rules/standard"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

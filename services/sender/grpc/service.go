@@ -19,7 +19,7 @@ import (
 	"crypto/x509"
 	"sync"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 	"github.com/herumi/bls-eth-go-binary/bls"
 	"github.com/jackc/puddle"
 	"github.com/pkg/errors"

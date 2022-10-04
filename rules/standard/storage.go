@@ -16,7 +16,7 @@ package standard
 import (
 	"context"
 
-	"github.com/attestantio/dirk/util/loggers"
+	"github.com/bliiitz/dirk/util/loggers"
 	badger "github.com/dgraph-io/badger/v2"
 	"github.com/dgraph-io/badger/v2/options"
 	"github.com/opentracing/opentracing-go"

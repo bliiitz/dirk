@@ -16,7 +16,7 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 )
 
 // OnListAccounts is called when a request to list accounts needs to be approved.

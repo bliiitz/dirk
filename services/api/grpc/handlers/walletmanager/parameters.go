@@ -16,8 +16,8 @@ package walletmanager
 import (
 	"errors"
 
-	"github.com/attestantio/dirk/services/process"
-	"github.com/attestantio/dirk/services/walletmanager"
+	"github.com/bliiitz/dirk/services/process"
+	"github.com/bliiitz/dirk/services/walletmanager"
 	"github.com/rs/zerolog"
 )
 

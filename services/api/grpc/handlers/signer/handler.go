@@ -16,7 +16,7 @@ package signer
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/signer"
+	"github.com/bliiitz/dirk/services/signer"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

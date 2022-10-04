@@ -16,7 +16,7 @@ package receiver
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/api/grpc/interceptors"
+	"github.com/bliiitz/dirk/services/api/grpc/interceptors"
 	"github.com/herumi/bls-eth-go-binary/bls"
 	"github.com/pkg/errors"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"

@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

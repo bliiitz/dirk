@@ -16,10 +16,10 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/peers"
-	"github.com/attestantio/dirk/services/sender"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/peers"
+	"github.com/bliiitz/dirk/services/sender"
 	"github.com/herumi/bls-eth-go-binary/bls"
 	e2wtypes "github.com/wealdtech/go-eth2-wallet-types/v2"
 )

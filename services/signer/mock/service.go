@@ -16,9 +16,9 @@ package mock
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/core"
-	rules "github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/checker"
+	"github.com/bliiitz/dirk/core"
+	rules "github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/checker"
 )
 
 // Service is the mock signer service.

@@ -16,7 +16,7 @@ package mock
 import (
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 )
 
 // OnSignBeaconAttestations is called when a request to sign multiple beacon block attestations needs to be approved.

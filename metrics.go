@@ -16,7 +16,7 @@ package main
 import (
 	"context"
 
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 )

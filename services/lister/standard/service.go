@@ -16,10 +16,10 @@ package standard
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/fetcher"
-	"github.com/attestantio/dirk/services/metrics"
-	"github.com/attestantio/dirk/services/ruler"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/fetcher"
+	"github.com/bliiitz/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/ruler"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	zerologger "github.com/rs/zerolog/log"

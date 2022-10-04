@@ -17,7 +17,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 	"github.com/pkg/errors"
 )
 

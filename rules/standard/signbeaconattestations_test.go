@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/attestantio/dirk/rules"
-	standardrules "github.com/attestantio/dirk/rules/standard"
-	"github.com/attestantio/dirk/testing/logger"
+	"github.com/bliiitz/dirk/rules"
+	standardrules "github.com/bliiitz/dirk/rules/standard"
+	"github.com/bliiitz/dirk/testing/logger"
 	"github.com/stretchr/testify/require"
 )
 

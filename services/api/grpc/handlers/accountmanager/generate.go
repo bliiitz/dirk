@@ -17,7 +17,7 @@ import (
 	context "context"
 	"errors"
 
-	"github.com/attestantio/dirk/services/api/grpc/handlers"
+	"github.com/bliiitz/dirk/services/api/grpc/handlers"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"
 )
 

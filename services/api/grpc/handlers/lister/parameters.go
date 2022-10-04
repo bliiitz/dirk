@@ -16,7 +16,7 @@ package lister
 import (
 	"errors"
 
-	"github.com/attestantio/dirk/services/lister"
+	"github.com/bliiitz/dirk/services/lister"
 	"github.com/rs/zerolog"
 )
 

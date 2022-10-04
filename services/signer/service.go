@@ -16,9 +16,9 @@ package signer
 import (
 	context "context"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/checker"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/checker"
 )
 
 // Service is the signer service.

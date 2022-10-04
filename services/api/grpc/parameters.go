@@ -14,13 +14,13 @@
 package grpc
 
 import (
-	"github.com/attestantio/dirk/services/accountmanager"
-	"github.com/attestantio/dirk/services/lister"
-	"github.com/attestantio/dirk/services/metrics"
-	"github.com/attestantio/dirk/services/peers"
-	"github.com/attestantio/dirk/services/process"
-	"github.com/attestantio/dirk/services/signer"
-	"github.com/attestantio/dirk/services/walletmanager"
+	"github.com/bliiitz/dirk/services/accountmanager"
+	"github.com/bliiitz/dirk/services/lister"
+	"github.com/bliiitz/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/peers"
+	"github.com/bliiitz/dirk/services/process"
+	"github.com/bliiitz/dirk/services/signer"
+	"github.com/bliiitz/dirk/services/walletmanager"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )

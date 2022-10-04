@@ -16,7 +16,7 @@ package standard
 import (
 	"context"
 
-	"github.com/attestantio/dirk/util"
+	"github.com/bliiitz/dirk/util"
 	"github.com/herumi/bls-eth-go-binary/bls"
 	"github.com/pkg/errors"
 )

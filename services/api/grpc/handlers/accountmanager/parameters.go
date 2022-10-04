@@ -16,8 +16,8 @@ package accountmanager
 import (
 	"errors"
 
-	"github.com/attestantio/dirk/services/accountmanager"
-	"github.com/attestantio/dirk/services/process"
+	"github.com/bliiitz/dirk/services/accountmanager"
+	"github.com/bliiitz/dirk/services/process"
 	"github.com/rs/zerolog"
 )
 

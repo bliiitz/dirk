@@ -17,8 +17,8 @@ import (
 	context "context"
 	"fmt"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/services/api/grpc/interceptors"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/services/api/grpc/interceptors"
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/pkg/errors"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"

@@ -18,8 +18,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	e2wallet "github.com/wealdtech/go-eth2-wallet"

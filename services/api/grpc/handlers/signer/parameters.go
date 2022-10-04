@@ -16,7 +16,7 @@ package signer
 import (
 	"errors"
 
-	"github.com/attestantio/dirk/services/signer"
+	"github.com/bliiitz/dirk/services/signer"
 	"github.com/rs/zerolog"
 )
 

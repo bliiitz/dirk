@@ -20,7 +20,7 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"
 )

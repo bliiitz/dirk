@@ -14,7 +14,7 @@
 package mem
 
 import (
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	keystorev4 "github.com/wealdtech/go-eth2-wallet-encryptor-keystorev4"

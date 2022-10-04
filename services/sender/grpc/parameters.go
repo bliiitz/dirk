@@ -14,7 +14,7 @@
 package grpc
 
 import (
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )

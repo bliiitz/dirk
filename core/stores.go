@@ -17,6 +17,7 @@ import (
 	"context"
 	"fmt"
 
+	vault "github.com/bliiitz/go-eth2-wallet-store-vault"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	filesystem "github.com/wealdtech/go-eth2-wallet-store-filesystem"
@@ -32,10 +33,17 @@ type Stores struct {
 
 // Store defines a single store.
 type Store struct {
-	Name       string `mapstructure:"name"`
-	Type       string `mapstructure:"type"`
-	Location   string `mapstructure:"location"`
-	Passphrase string `mapstructure:"passphrase"`
+	Name                           string `mapstructure:"name"`
+	Type                           string `mapstructure:"type"`
+	Location                       string `mapstructure:"location"`
+	Passphrase                     string `mapstructure:"passphrase"`
+	ID                             string `mapstructure:"id"`
+	VaultAddr                      string `mapstructure:"vault_addr"`
+	VaultAuth                      string `mapstructure:"vault_auth"`
+	VaultToken                     string `mapstructure:"vault_token"`
+	VaultKubernetesAuthRole        string `mapstructure:"vault_kubernetes_auth_role"`
+	VaultKubernetesAuthSATokenPath string `mapstructure:"vault_kubernetes_auth_sa_token_path"`
+	VaultKubernetesAuth            string `mapstructure:"vault_kubernetes_auth"`
 }
 
 // InitStores initialises the stores from a configuration.
@@ -52,6 +60,7 @@ func InitStores(ctx context.Context, stores []*Store) ([]e2wtypes.Store, error) 
 		if store.Type == "" {
 			return nil, fmt.Errorf("store %d has no type", i)
 		}
+		log.Trace().Str("Load store", store.Type).Msg("Adding store")
 		switch store.Type {
 		case "filesystem":
 			log.Trace().Str("name", store.Name).Str("location", store.Location).Str("type", store.Type).Msg("Adding filesystem store")
@@ -70,6 +79,23 @@ func InitStores(ctx context.Context, stores []*Store) ([]e2wtypes.Store, error) 
 				return nil, errors.Wrap(err, fmt.Sprintf("failed to access store %d", i))
 			}
 			res = append(res, s3Store)
+		case "vault":
+			log.Trace().Str("name", store.Name).Msg("Adding Vault store")
+			vaultStore, err := vault.New(
+				vault.WithPassphrase([]byte(store.Passphrase)),
+				vault.WithID([]byte(store.ID)),
+				vault.WithVaultAddr([]byte(store.VaultAddr)),
+				vault.WithVaultAuth([]byte(store.VaultAuth)),
+				vault.WithVaultToken([]byte(store.VaultToken)),
+				vault.WithVaultKubernetesAuthRole([]byte(store.VaultKubernetesAuthRole)),
+				vault.WithVaultKubernetesAuthSATokenPath([]byte(store.VaultKubernetesAuthSATokenPath)),
+				vault.WithVaultKubernetesAuth([]byte(store.VaultKubernetesAuth)),
+				vault.WithVaultAddr([]byte(store.VaultAddr)),
+			)
+			if err != nil {
+				return nil, errors.Wrap(err, fmt.Sprintf("failed to access store %d", i))
+			}
+			res = append(res, vaultStore)
 		case "scratch":
 			log.Trace().Msg("Adding scratch store")
 			res = append(res, scratch.New())

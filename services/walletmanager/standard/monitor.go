@@ -16,7 +16,7 @@ package standard
 import (
 	"time"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 )
 
 // noopMonitor is a monitor that does nothing, used in place of nil if an

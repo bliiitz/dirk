@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/ruler"
-	"github.com/attestantio/dirk/util"
+	"github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/ruler"
+	"github.com/bliiitz/dirk/util"
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"
 )

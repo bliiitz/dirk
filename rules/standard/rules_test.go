@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	standardrules "github.com/attestantio/dirk/rules/standard"
+	standardrules "github.com/bliiitz/dirk/rules/standard"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -17,9 +17,9 @@ import (
 	context "context"
 	"strings"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/api/grpc/handlers"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/api/grpc/handlers"
 	pb "github.com/wealdtech/eth2-signer-api/pb/v1"
 )
 

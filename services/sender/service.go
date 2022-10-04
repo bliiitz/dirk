@@ -16,7 +16,7 @@ package sender
 import (
 	"context"
 
-	"github.com/attestantio/dirk/core"
+	"github.com/bliiitz/dirk/core"
 	"github.com/herumi/bls-eth-go-binary/bls"
 )
 

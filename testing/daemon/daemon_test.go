@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/attestantio/dirk/testing/daemon"
+	"github.com/bliiitz/dirk/testing/daemon"
 	"github.com/stretchr/testify/require"
 )
 

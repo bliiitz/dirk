@@ -16,7 +16,7 @@ package standard
 import (
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 	"github.com/opentracing/opentracing-go"
 )
 

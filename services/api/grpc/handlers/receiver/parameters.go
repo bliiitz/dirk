@@ -16,8 +16,8 @@ package receiver
 import (
 	"errors"
 
-	"github.com/attestantio/dirk/services/peers"
-	"github.com/attestantio/dirk/services/process"
+	"github.com/bliiitz/dirk/services/peers"
+	"github.com/bliiitz/dirk/services/process"
 	"github.com/rs/zerolog"
 )
 

@@ -14,9 +14,9 @@
 package golang
 
 import (
-	"github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/locker"
-	"github.com/attestantio/dirk/services/metrics"
+	"github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/locker"
+	"github.com/bliiitz/dirk/services/metrics"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )

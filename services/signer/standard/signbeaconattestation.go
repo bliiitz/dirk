@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/attestantio/dirk/core"
-	"github.com/attestantio/dirk/rules"
-	"github.com/attestantio/dirk/services/checker"
-	"github.com/attestantio/dirk/services/ruler"
 	spec "github.com/attestantio/go-eth2-client/spec/phase0"
+	"github.com/bliiitz/dirk/core"
+	"github.com/bliiitz/dirk/rules"
+	"github.com/bliiitz/dirk/services/checker"
+	"github.com/bliiitz/dirk/services/ruler"
 )
 
 // SignBeaconAttestation signs a attestation for a beacon block.

@@ -17,7 +17,7 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/attestantio/dirk/rules"
+	"github.com/bliiitz/dirk/rules"
 	"github.com/opentracing/opentracing-go"
 	e2types "github.com/wealdtech/go-eth2-types/v2"
 )
