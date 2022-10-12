@@ -70,8 +70,6 @@ github.com/armon/go-metrics v0.3.9/go.mod h1:4O98XIr/9W0sxpJ8UaYkvjk10Iff7SnFrb4
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=
 github.com/armon/go-radix v1.0.0/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
-github.com/bliiitz/dirk v1.1.0 h1:hwMTYZkwj/Y0um3OD0LQxg2xSl4/5xqVWV2MRePE4ec=
-github.com/bliiitz/dirk v1.1.0/go.mod h1:2jkOw/XHjvIDdhDcmj+Z3kuVPpxMcQ6zxzzjSSv71PY=
 github.com/attestantio/go-eth2-client v0.8.1 h1:KR9FVsEr7t/Gr7bmfONI8itYGDrOgnDuyIYFsfwGGdA=
 github.com/attestantio/go-eth2-client v0.8.1/go.mod h1:kEK9iAAOBoADO5wEkd84FEOzjT1zXgVWveQsqn+uBGg=
 github.com/aws/aws-sdk-go v1.30.27/go.mod h1:5zCpMtNQVjRREroY7sYe8lOMRSxkhG6MZveU8YkpAk0=
@@ -84,8 +82,14 @@ github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+Ce
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
+github.com/bliiitz/dirk v1.1.0 h1:hwMTYZkwj/Y0um3OD0LQxg2xSl4/5xqVWV2MRePE4ec=
+github.com/bliiitz/dirk v1.1.0/go.mod h1:2jkOw/XHjvIDdhDcmj+Z3kuVPpxMcQ6zxzzjSSv71PY=
 github.com/bliiitz/go-eth2-wallet-store-vault v0.0.0-20220929164509-4070d48ff952 h1:f6HnEJSo8ytinOaJ01gihzO3bZvRCDJ6bBwFsDJmAzY=
 github.com/bliiitz/go-eth2-wallet-store-vault v0.0.0-20220929164509-4070d48ff952/go.mod h1:os4VgvTM7xXrmdTiuifjoBraOape6lY4BgoQcVB7iO4=
+github.com/bliiitz/go-eth2-wallet-store-vault v0.2.0 h1:4oTJdHlGGIVrqTzBxgmBTpZ1vm2pDZ7qsh9w55BDUnU=
+github.com/bliiitz/go-eth2-wallet-store-vault v0.2.0/go.mod h1:os4VgvTM7xXrmdTiuifjoBraOape6lY4BgoQcVB7iO4=
+github.com/bliiitz/go-eth2-wallet-store-vault v0.6.0 h1:h9V3k2Tu5enxtBzAUWxH9J8wkBVsNlZNVlU2K4mlRYI=
+github.com/bliiitz/go-eth2-wallet-store-vault v0.6.0/go.mod h1:os4VgvTM7xXrmdTiuifjoBraOape6lY4BgoQcVB7iO4=
 github.com/cenkalti/backoff/v3 v3.0.0 h1:ske+9nBpD9qZsTBoF41nW5L+AIuFBKMeze18XQ3eG1c=
 github.com/cenkalti/backoff/v3 v3.0.0/go.mod h1:cIeZDE3IrqwwJl6VUwCN6trj1oXrTS4rc0ij+ULvLYs=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=

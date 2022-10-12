@@ -44,6 +44,7 @@ type Store struct {
 	VaultKubernetesAuthRole        string `mapstructure:"vault_kubernetes_auth_role"`
 	VaultKubernetesAuthSATokenPath string `mapstructure:"vault_kubernetes_auth_sa_token_path"`
 	VaultKubernetesAuth            string `mapstructure:"vault_kubernetes_auth"`
+	VaultSecretMountPath           string `mapstructure:"vault_secrets_mount_path"`
 }
 
 // InitStores initialises the stores from a configuration.
@@ -81,17 +82,45 @@ func InitStores(ctx context.Context, stores []*Store) ([]e2wtypes.Store, error) 
 			res = append(res, s3Store)
 		case "vault":
 			log.Trace().Str("name", store.Name).Msg("Adding Vault store")
-			vaultStore, err := vault.New(
-				vault.WithPassphrase([]byte(store.Passphrase)),
-				vault.WithID([]byte(store.ID)),
-				vault.WithVaultAddr([]byte(store.VaultAddr)),
-				vault.WithVaultAuth([]byte(store.VaultAuth)),
-				vault.WithVaultToken([]byte(store.VaultToken)),
-				vault.WithVaultKubernetesAuthRole([]byte(store.VaultKubernetesAuthRole)),
-				vault.WithVaultKubernetesAuthSATokenPath([]byte(store.VaultKubernetesAuthSATokenPath)),
-				vault.WithVaultKubernetesAuth([]byte(store.VaultKubernetesAuth)),
-				vault.WithVaultAddr([]byte(store.VaultAddr)),
-			)
+			opts := make([]vault.Option, 0)
+
+			if len(store.Passphrase) > 0 {
+				opts = append(opts, vault.WithPassphrase([]byte(store.Passphrase)))
+			}
+
+			if len(store.ID) > 0 {
+				opts = append(opts, vault.WithID([]byte(store.ID)))
+			}
+
+			if len(store.VaultAddr) > 0 {
+				opts = append(opts, vault.WithVaultAddr(store.VaultAddr))
+			}
+
+			if len(store.VaultAuth) > 0 {
+				opts = append(opts, vault.WithVaultAuth(store.VaultAuth))
+			}
+
+			if len(store.VaultToken) > 0 {
+				opts = append(opts, vault.WithVaultToken(store.VaultToken))
+			}
+
+			if len(store.VaultKubernetesAuthRole) > 0 {
+				opts = append(opts, vault.WithVaultKubernetesAuthRole(store.VaultKubernetesAuthRole))
+			}
+
+			if len(store.VaultKubernetesAuthSATokenPath) > 0 {
+				opts = append(opts, vault.WithVaultKubernetesAuthSATokenPath(store.VaultKubernetesAuthSATokenPath))
+			}
+
+			if len(store.VaultKubernetesAuth) > 0 {
+				opts = append(opts, vault.WithVaultKubernetesAuth(store.VaultKubernetesAuth))
+			}
+
+			if len(store.VaultSecretMountPath) > 0 {
+				opts = append(opts, vault.WithVaultSecretMountPath(store.VaultSecretMountPath))
+			}
+
+			vaultStore, err := vault.New(opts...)
 			if err != nil {
 				return nil, errors.Wrap(err, fmt.Sprintf("failed to access store %d", i))
 			}
